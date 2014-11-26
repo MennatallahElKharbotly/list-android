@@ -9,11 +9,11 @@ import android.view.View;
 import android.widget.Toast;
 
 public class MyHomeActivity extends Activity {
-	String myName = getIntent().getStringExtra("tag");
-
+	String myName;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		myName = getIntent().getStringExtra("tag");
 		setContentView(R.layout.activity_my_home);
 	}
 	
